@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>test question 1</h1>
+    <script>
+const countletter = (string) => {
+    let result = string.replace(" ", "")
+    console.log(result)
+    const resp = {};
+
+    for (const char of result) {
+        resp[char] = (resp[char] || 0) + 1;
+    }
+    return resp;
+};
+
+const string = "mayuri bondre";
+console.log(countletter(string));
+    </script>
+</body>
+</html>
